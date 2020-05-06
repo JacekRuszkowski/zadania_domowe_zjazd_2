@@ -13,16 +13,13 @@ def max_z_dwoch_liczb(a: int, b: int) -> int:
     elif b > a:
         wynik = b
     else:
-        print("Obie liczby są sobie równe.")
         wynik = a
 
     return wynik
 
 
-print(f"Maximum z podanych liczb to {max_z_dwoch_liczb(a = int(input('Podaj pierwszą liczbę: ')), b = int(input('Podaj pierwszą liczbę: ')))}")
-
-
-
+print(
+    f"Maximum z podanych liczb to {max_z_dwoch_liczb(a=int(input('Podaj pierwszą liczbę: ')), b=int(input('Podaj pierwszą liczbę: ')))}")
 
 
 # TESTY
@@ -44,4 +41,3 @@ def test_na_rowne_wartosci():
 
 def test_na_ujemne():
     assert max_z_dwoch_liczb(-5, -63) == -5
-
