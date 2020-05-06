@@ -1,8 +1,7 @@
 # `suma(liczby)` - zwraca sumę liczb z listy `liczby` - postaraj się nie używać funkcji `sum` wbudowanej w pythona
 
-from typing import List
 
-def suma(lista: List[int]) -> int:
+def suma(lista: list) -> int:
     """
     Funkcja do liczenie sumy elementów z listy
     :param lista:
@@ -16,6 +15,7 @@ def suma(lista: List[int]) -> int:
 
 
 lista = [1, 7, 3, 17, 8, 24]
+
 
 # print(suma(lista))
 

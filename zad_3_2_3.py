@@ -1,25 +1,19 @@
 # - `max(liczby)` – zwraca największą wartość z listy `liczby` - postaraj się nie używać funkcji `max` wbudowanej w pythona
 
 
-
-from typing import List
-
-def maksymalna(lista: List[int]) -> int:
+def maksymalna(lista: list) -> int:
     """
     Funkcja licząca największą liczbę z lity
     :param lista: lista liczb całkowitych
     :return: maksymalna liczba z listy
     """
-    wynik = 0
-    for i in lista:    # TODO zmienic na None
-        if i >= wynik:
+    wynik = None
+    for i in lista:
+        if wynik is None or i > wynik:
             wynik = i
 
     return wynik
 
-lista = [10, 20, 30, 40, 50]
-
-# print(maksymalna(lista))
 
 def test_czy_dziala():
     assert maksymalna([10, 20, 30, 40, 50]) == 50
